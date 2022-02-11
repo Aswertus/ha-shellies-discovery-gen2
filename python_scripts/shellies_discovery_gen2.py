@@ -1017,7 +1017,7 @@ def configure_device():
         relay_type = (
             ATTR_LIGHT
             if ATTR_LIGHT
-            in device_config["sys"]["ui_data"]
+            in device_config["sys"]["device"]
             .get("consumption_types", {})
             .get(relay_id, "switch")
             .lower()
